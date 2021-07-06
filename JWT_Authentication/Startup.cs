@@ -1,3 +1,4 @@
+using JWT_Authentication.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,6 +29,7 @@ namespace JWT_Authentication
         public void ConfigureServices(IServiceCollection services)
         {
             string key = "My Name is Khan and what is yours";
+            //var tokenKey = Encoding.ASCII.GetBytes(key);
             services.AddControllers();
             services.AddAuthentication(x =>
             {
@@ -45,8 +47,9 @@ namespace JWT_Authentication
                     ValidateAudience=false
                 };
             });
-
-            services.AddSingleton<IJwtAuthenticationManager>(new JwtAuthenticationManager(key));
+            services.AddSingleton<ITokenRefresher>(x => new TokenRefresher(key, x.GetService<IJwtAuthenticationManager>()));
+            services.AddSingleton<IRefreshTokenGenerator, RefreshTokenGenerator>();
+            services.AddSingleton<IJwtAuthenticationManager>(x=>new JwtAuthenticationManager(key,x.GetService<IRefreshTokenGenerator>()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

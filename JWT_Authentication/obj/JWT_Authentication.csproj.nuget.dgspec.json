@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\ASP.NET Core\\JWT_Authentication\\JWT_Authentication\\JWT_Authentication.csproj": {}
+    "C:\\Users\\user\\Desktop\\ASP.NET Core\\JWT_Authentication\\JWT-Token-Authentication\\JWT_Authentication\\JWT_Authentication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\ASP.NET Core\\JWT_Authentication\\JWT_Authentication\\JWT_Authentication.csproj": {
+    "C:\\Users\\user\\Desktop\\ASP.NET Core\\JWT_Authentication\\JWT-Token-Authentication\\JWT_Authentication\\JWT_Authentication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\ASP.NET Core\\JWT_Authentication\\JWT_Authentication\\JWT_Authentication.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\ASP.NET Core\\JWT_Authentication\\JWT-Token-Authentication\\JWT_Authentication\\JWT_Authentication.csproj",
         "projectName": "JWT_Authentication",
-        "projectPath": "C:\\Users\\user\\Desktop\\ASP.NET Core\\JWT_Authentication\\JWT_Authentication\\JWT_Authentication.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\ASP.NET Core\\JWT_Authentication\\JWT-Token-Authentication\\JWT_Authentication\\JWT_Authentication.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\ASP.NET Core\\JWT_Authentication\\JWT_Authentication\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\ASP.NET Core\\JWT_Authentication\\JWT-Token-Authentication\\JWT_Authentication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

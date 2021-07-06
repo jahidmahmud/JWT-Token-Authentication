@@ -16,10 +16,12 @@ namespace JWT_Authentication.Controllers
     public class NameController : ControllerBase
     {
         private readonly IJwtAuthenticationManager manager;
+        private readonly ITokenRefresher refresher;
 
-        public NameController(IJwtAuthenticationManager manager)
+        public NameController(IJwtAuthenticationManager manager,ITokenRefresher refresher)
         {
             this.manager = manager;
+            this.refresher = refresher;
         }
         // GET: api/<NameController>
         [HttpGet]
@@ -39,6 +41,17 @@ namespace JWT_Authentication.Controllers
         public IActionResult Authenticate([FromBody]UserCredential user)
         {
             var token=manager.Authenticate(user.UserName, user.Password);
+            if (token == null)
+            {
+                return Unauthorized();
+            }
+            return Ok(token);
+        }
+        [HttpPost("refresh")]
+        [AllowAnonymous]
+        public IActionResult Refresh([FromBody] RefreshCred refresh)
+        {
+            var token = refresher.Refresher(refresh);
             if (token == null)
             {
                 return Unauthorized();

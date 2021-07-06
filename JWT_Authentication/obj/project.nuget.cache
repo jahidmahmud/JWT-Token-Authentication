@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z3BbBZFM+wmib0/w87Uc8GdwBGWUv4LmfgF2voazhO4nic3O23dlx/uAZTRWt9U7pxJHf/w02xfluFIrgqkXZw==",
+  "dgSpecHash": "qeKeWqX2ClJ5IzaPubfhPSB7ZrGOmK8nzedwUgAtgNXp9zQc3FjNUc/kSpyzG3+t0etjZFW/2RP19g2KmBD2xQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\ASP.NET Core\\JWT_Authentication\\JWT_Authentication\\JWT_Authentication.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\ASP.NET Core\\JWT_Authentication\\JWT-Token-Authentication\\JWT_Authentication\\JWT_Authentication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
